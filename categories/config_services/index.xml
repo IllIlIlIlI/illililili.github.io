@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Config_services on HoneyTrap</title>
+    <link>https://honeytrap.io/categories/config_services/</link>
+    <description>Recent content in Config_services on HoneyTrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://honeytrap.io/categories/config_services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ADB</title>
+      <link>https://honeytrap.io/configuration/services/adb/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/adb/</guid>
+      <description> Description Android Debug Bridge service will listen for commands sent from ADB clients and will simulate a Unix shell.
+Syntax [service.&amp;lt;nickname_of_adbService&amp;gt;] type=&amp;#34;adb&amp;#34;  Arguments in config file There are no arguments in ADB service.
+Example [service.adb01] type=&amp;#34;adb&amp;#34; [[port]] port=&amp;#34;tcp/5037&amp;#34; services=[&amp;#34;adb01&amp;#34;] How to test echo &amp;quot;434e584e00000001001000000700000032020000bcb1a7b1686f73743a3a00&amp;quot; | xxd -r -p | nc localhost 5037
+Availability 
+    Linux MacOS     adb yes yes    </description>
+    </item>
+    
+    <item>
+      <title>CWMP</title>
+      <link>https://honeytrap.io/configuration/services/cwmp/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/cwmp/</guid>
+      <description> Description CWMP service will simulate an Auto Configuration Server (ACS) which allows the management of a Customer Premises Equipement (CPE) through the text based protocol CWMP.
+Syntax [service.&amp;lt;nickname_of_cwmpService&amp;gt;] type=&amp;#34;cwmp&amp;#34; Arguments in config file There are no arguments in CWMP service.
+Example [service.cwmp01] type=&amp;#34;cwmp&amp;#34; [[port]] port=&amp;#34;tcp/3890&amp;#34; services=[&amp;#34;cwmp01&amp;#34;] How to test &amp;lt;&amp;hellip;&amp;gt;
+Availability 
+    Linux MacOS     CWMP yes yes    </description>
+    </item>
+    
+    <item>
+      <title>Copy</title>
+      <link>https://honeytrap.io/configuration/services/copy/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/copy/</guid>
+      <description> Description &amp;lt;&amp;hellip;&amp;gt;
+Syntax [service.&amp;lt;nickname_of_copyService&amp;gt;] type=&amp;#34;copy&amp;#34;  Arguments in config file There are no arguments for Copy service.
+Example [service.copy01] type=&amp;#34;copy&amp;#34; director=&amp;#34;lxc01&amp;#34; [[port]] &amp;lt;...&amp;gt; [director.lxc01] type=&amp;#34;lxc&amp;#34; How to test &amp;lt;&amp;hellip;&amp;gt;
+Availability 
+    Linux MacOS     copy yes yes    </description>
+    </item>
+    
+    <item>
+      <title>Counterstrike</title>
+      <link>https://honeytrap.io/configuration/services/counterstrike/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/counterstrike/</guid>
+      <description> Description Counterstrike service will simulate a Counterstrike server.
+Syntax [service.&amp;lt;nickname_of_CounterstrikeService&amp;gt;] type=&amp;#34;counterstrike&amp;#34; Arguments in config file There are no arguments in Counterstrike service.
+Example [service.counterstrike01] type=&amp;#34;counterstrike&amp;#34; [[port]] port=&amp;#34;udp/27016&amp;#34; services=[&amp;#34;counterstrike01&amp;#34;] How to test echo &amp;quot;ffffffff54536f7572636520456e67696e6520517565727900&amp;quot; | xxd -r -p | nc -u localhost 27016
+Platform Availability 
+    Linux MacOS     counterstrike yes yes    Commands implemented     available     COUNTERSTRIKE_A2S_INFO yes   COUNTERSTRIKE_A2S_PLAYER yes   COUNTERSTRIKE_A2S_RULES yes   COUNTERSTRIKE_A2S_SERVERQUERY_GETCHALLENGE yes   COUNTERSTRIKE_A2A_PING yes    </description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://honeytrap.io/configuration/services/dns/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/dns/</guid>
+      <description>Description DNS service will log every DNS request.
+Syntax [service.&amp;lt;nickname_of_dnsService&amp;gt;] type=&amp;#34;dns&amp;#34; Arguments in config file There are no arguments in DNS service.
+Example [service.dns01] type=&amp;#34;dns&amp;#34; [[port]] port=&amp;#34;udp/53&amp;#34; services=[&amp;#34;dns01&amp;#34;] How to test echo &amp;quot;064f0120000100000000000106676f6f676c6503636f6d00000100010000291000000000000000&amp;quot; | xxd -r -p | nc -u localhost 53
+Availability 
+    Linux MacOS     DNS yes yes    Commands implemented     available     version.</description>
+    </item>
+    
+    <item>
+      <title>DNS-Proxy</title>
+      <link>https://honeytrap.io/configuration/services/dns-proxy/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/dns-proxy/</guid>
+      <description> Description DNS Proxy service will forward dns request to a specific destination thanks to a director.
+Syntax [service.&amp;lt;nickname_of_dnsProxy&amp;gt;] type=&amp;#34;dns-proxy&amp;#34; Arguments in config file There are no arguments in DNS Proxy service.
+Example [service.dnsproxy01] type=&amp;#34;dns-proxy&amp;#34; director=&amp;#34;googledns01&amp;#34; [[port]] port=&amp;#34;udp/53&amp;#34; services=[&amp;#34;dnsproxy01&amp;#34;] [director.googledns01] type=&amp;#34;forward&amp;#34; host=&amp;#34;8.8.8.8&amp;#34; How to test echo &amp;quot;064f0120000100000000000106676f6f676c6503636f6d00000100010000291000000000000000&amp;quot; | xxd -r -p | nc -u localhost 53
+Availability 
+    Linux MacOS     dns-proxy yes yes    </description>
+    </item>
+    
+    <item>
+      <title>EOS</title>
+      <link>https://honeytrap.io/configuration/services/eos/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/eos/</guid>
+      <description> Description EOS service will simulate an EOS node.
+Syntax [service.&amp;lt;nickname_of_eosService&amp;gt;] type=&amp;#34;eos&amp;#34; Arguments in config file There are no arguments in EOS service.
+Example [service.eos] type=&amp;#34;eos&amp;#34; [[port]] port=&amp;#34;tcp/8888&amp;#34; services=[&amp;#34;eos&amp;#34;] How to test curl -X GET http://127.0.0.1:8888/v1/wallet/list_keys
+Availability 
+    Linux MacOS     eos yes yes    Commands implemented     available     /v1/wallet/list_keys yes    </description>
+    </item>
+    
+    <item>
+      <title>Echo</title>
+      <link>https://honeytrap.io/configuration/services/echo/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/echo/</guid>
+      <description> Description Echo service will simply return the input.
+Syntax [service.&amp;lt;nickname_of_echoService&amp;gt;] type=&amp;#34;echo&amp;#34; Arguments in config file There are no arguments in Echo service.
+Example [service.echo01] type=&amp;#34;echo&amp;#34; [[port]] port=&amp;#34;udp/5555&amp;#34; services=[&amp;#34;echo01&amp;#34;] How to test echo &amp;quot;hello Dutchsec&amp;quot; | nc -u localhost 5555
+Availability 
+    Linux MacOS     echo yes yes    </description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://honeytrap.io/configuration/services/elasticsearch/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/elasticsearch/</guid>
+      <description>Description Elasticsearch service will log every Elasticsearch request.
+Syntax [service.&amp;lt;nickname_of_elasticsearchService&amp;gt;] type=&amp;#34;elasticsearch&amp;#34; Arguments in config file There are 3 arguments in Elasticsearch service:
+   argument default setting explanation     name AW2LChf &amp;lt;&amp;hellip;&amp;gt;   cluster_name elasticsearch Set your cluster name.   cluster_uuid ay20oRi4SHmlOPAyTrPh6A Set your cluster uuid.    Example [service.elastico] type=&amp;#34;elasticsearch&amp;#34; name=&amp;#34;AW2LChf&amp;#34; cluster_name=&amp;#34;elasticsearch&amp;#34; cluster_uuid=&amp;#34;ay20oRi4SHmlOPAyTrPh6A&amp;#34; [[port]] port=&amp;#34;tcp/9200&amp;#34; services=[&amp;#34;elastico&amp;#34;] How to test curl 127.0.0.1:9200</description>
+    </item>
+    
+    <item>
+      <title>Ethereum</title>
+      <link>https://honeytrap.io/configuration/services/ethereum/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ethereum/</guid>
+      <description> Description Ethereum service will simulate an Ethereum node.
+Syntax [service.&amp;lt;nickname_of_ethereumService&amp;gt;] type=&amp;#34;ethereum&amp;#34; Arguments in config file There are no arguments in Ethereum service.
+Example [service.ethereum] type=“ethereum” [[port]] port=&amp;#34;tcp/8545” services=[“ethereum”] How to test curl -H “Content-Type: application/json” localhost:8545 -XPOST --data &#39;{&amp;quot;jsonrpc&amp;quot;:&amp;quot;2.0&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;eth_getBlockByNumber&amp;quot;,&amp;quot;params&amp;quot;:[&amp;quot;0x1b4&amp;quot;, true],&amp;quot;id&amp;quot;:1}&#39;
+Availability 
+    Linux MacOS     Ethereum yes yes    Commands implemented     available     admin_peers not yet   eth_accounts yes   eth_blockNumber yes   eth_clientVersion yes   eth_coinbase yes   eth_getBalance yes   eth_getBlockByNumber yes   eth_getTransactionCount yes   eth_mining yes   eth_sendTransaction yes   miner_setEtherbase yes   net_version yes   personal_unlockAccount yes   rpc_modules yes    </description>
+    </item>
+    
+    <item>
+      <title>FTP</title>
+      <link>https://honeytrap.io/configuration/services/ftp/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ftp/</guid>
+      <description>Description FTP service will simulate a FTP server.
+Syntax [service.&amp;lt;nickname_of_ftp&amp;gt;] type=&amp;#34;ftp&amp;#34; Arguments in config file There are 4 arguments in FTP service:
+   argument default setting explanation     banner no &amp;lt;&amp;hellip;&amp;gt;   passive-port-range no &amp;lt;&amp;hellip;&amp;gt;   name no &amp;lt;&amp;hellip;&amp;gt;   fs_base no &amp;lt;&amp;hellip;&amp;gt;    Example [service.ftp] type=&amp;#34;ftp&amp;#34; [[port]] port=&amp;#34;tcp/21&amp;#34; services=[&amp;#34;ftp&amp;#34;] How to test In your browser: ftp://localhost
+Availability</description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>https://honeytrap.io/configuration/services/http/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/http/</guid>
+      <description> Description The HTTP service will simulate a web server.
+Syntax [service.&amp;lt;nickname_of_httpService&amp;gt;] type=&amp;#34;http&amp;#34; Arguments in config file There is 1 argument in HTTP service:
+   argument default setting explanation     server Apache Set the name of your web server.    Example [service.http01] type=&amp;#34;http&amp;#34; name=&amp;#34;&amp;lt;...&amp;gt;&amp;#34; [[port]] port=&amp;#34;tcp/8080&amp;#34; services=[&amp;#34;http01&amp;#34;] How to test curl -v -X GET http://127.0.0.1:8080
+Availability 
+    Linux MacOS     http yes yes    </description>
+    </item>
+    
+    <item>
+      <title>HTTP-Proxy</title>
+      <link>https://honeytrap.io/configuration/services/http-proxy/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/http-proxy/</guid>
+      <description> Description The HTTP proxy will proxy all traffic through to the director. This could be a LXC director or a remote host.
+director [service.&amp;lt;nickname_of_httpProxyService&amp;gt;] type=&amp;#34;http-proxy&amp;#34; Arguments in config file There are no arguments in HTTP Proxy service.
+Example [service.httpProxy] type=&amp;#34;http-proxy&amp;#34; director=&amp;#34;lxc&amp;#34; [[port]] port=&amp;#34;tcp/8080&amp;#34; services=[&amp;#34;httpProxy&amp;#34;] [director.lxc] type=&amp;#34;lxc&amp;#34; &amp;lt;...&amp;gt; How to test &amp;lt;&amp;hellip;&amp;gt;
+Availability 
+    Linux MacOS     http-proxy yes yes    </description>
+    </item>
+    
+    <item>
+      <title>HTTPS</title>
+      <link>https://honeytrap.io/configuration/services/https/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/https/</guid>
+      <description> Description The HTTPs service will simulate a secure communication to a web server.
+Syntax [service.&amp;lt;nickname_of_https&amp;gt;] type=&amp;#34;https&amp;#34; Arguments in config file There are no arguments in HTTPS service.
+Example [service.https] type=&amp;#34;https&amp;#34; [[port]] port=&amp;#34;tcp/8080&amp;#34; services=[&amp;#34;https&amp;#34;] How to test &amp;lt;&amp;hellip;&amp;gt;
+Availability 
+    Linux MacOS     https yes yes    </description>
+    </item>
+    
+    <item>
+      <title>IPP</title>
+      <link>https://honeytrap.io/configuration/services/ipp/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ipp/</guid>
+      <description>Description IPP service will simulate an internet connected printer.
+Syntax [service.&amp;lt;nickname_of_ipp&amp;gt;] type=&amp;#34;ipp&amp;#34; Arguments in config file There are 4 arguments in ipp service:
+   argument default setting explanation     server hplj1020 Set the banner of your server.   storage-dir none Set the name of the directory where print data is stored.   printer-name none Set the name of your printer.   size-treshold 104857600 Set the maximum-size for storage of print files.</description>
+    </item>
+    
+    <item>
+      <title>LDAP</title>
+      <link>https://honeytrap.io/configuration/services/ldap/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ldap/</guid>
+      <description>Description The LDAP service will simulate a directory server accessible via LDAP.
+Syntax [service.&amp;lt;nickname_of_ldap&amp;gt;] type=&amp;#34;ldap&amp;#34; Arguments in config file There is 8 argument in ldap service:
+   argument default setting explanation     credentials &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   naming-contexts &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   supported-ldap-version &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   supported-extension &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   vendor-name &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   vendor-version &amp;lt;..&amp;gt; &amp;lt;..&amp;gt;   description &amp;lt;..&amp;gt; &amp;lt;.</description>
+    </item>
+    
+    <item>
+      <title>Memcached</title>
+      <link>https://honeytrap.io/configuration/services/memcached/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/memcached/</guid>
+      <description> Description The Memcached service will log and reject all commands.
+Syntax [service.&amp;lt;nickname_of_memcached&amp;gt;] type=&amp;#34;memcached&amp;#34; Arguments in config file There are no arguments in memcached service.
+Example [service.memcached01] type=&amp;#34;memcached&amp;#34; [[port]] port=&amp;#34;udp/11211&amp;#34; services=[&amp;#34;memcached01&amp;#34;] How to test echo &amp;quot;000000000001000073746174730d0a00&amp;quot; | xxd -r -p | nc -u localhost 11211
+Availability 
+    Linux MacOS     memcached yes yes    Commands implemented     available     stats yes   flush_all yes   add yes   replace yes   prepend yes   append yes   cas yes   set yes    </description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://honeytrap.io/configuration/services/redis/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/redis/</guid>
+      <description>Description The Redis service will simulate a Redis server.
+Syntax [service.&amp;lt;nickname_of_redisService&amp;gt;] type=&amp;#34;redis&amp;#34; Arguments in config file There are 2 arguments in Redis service:
+   argument default setting explanation     version 4.0.6 Set the version of your Redis Server.   os Linux 4.9.49-moby x86_64 Set the os of your Redis Server.    Example [service.redis] type=&amp;#34;redis&amp;#34; version=&amp;#34;4.0.2&amp;#34; os=&amp;#34;Linux 2.6.32-431.el6.x86_64 x86_64&amp;#34; [[port]] port=&amp;#34;tcp/6379&amp;#34; services=[&amp;#34;redis&amp;#34;] How to test echo “2a310d0a24340d0a696e666f0d0a” | xxd -r -p | nc localhost 6379</description>
+    </item>
+    
+    <item>
+      <title>SMTP</title>
+      <link>https://honeytrap.io/configuration/services/smtp/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/smtp/</guid>
+      <description> Description The SMTP service will simulate a SMTP server.
+Syntax [service.&amp;lt;nickname_of_smtp&amp;gt;] type=&amp;#34;smtp&amp;#34; Arguments in config file There is 1 argument in smtp service:
+   argument default setting explanation     banner SMTPd Set the banner of your SMTP server.    Example [service.smtp] type=&amp;#34;smtp&amp;#34; [[port]] port=&amp;#34;tcp/25&amp;#34; services=[&amp;#34;smtp&amp;#34;] How to test telnet 127.0.0.1 25
+Availability 
+    Linux MacOS     smtp yes yes    </description>
+    </item>
+    
+    <item>
+      <title>SSH-Auth</title>
+      <link>https://honeytrap.io/configuration/services/ssh-authentication/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ssh-authentication/</guid>
+      <description>Description The SSH Authentication service will capture all username, password and public keys that are being used to authenticate to a SSH. It will always return an error / permission denied.
+Syntax [service.&amp;lt;nickname_of_ssh-auth&amp;gt;] type=&amp;#34;ssh-auth&amp;#34; Arguments in config file There are 2 arguments in ssh-auth service:
+   argument default setting explanation     banner SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2 Set the banner of your shell.   private-key random Set a ssh private-key.</description>
+    </item>
+    
+    <item>
+      <title>SSH-Jail</title>
+      <link>https://honeytrap.io/configuration/services/ssh-jail/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ssh-jail/</guid>
+      <description>Description The SSH Jail service will &amp;lt;&amp;hellip;&amp;gt;
+Syntax [service.&amp;lt;nickname_of_ssh-jail&amp;gt;] type=&amp;#34;ssh-jail&amp;#34; Arguments in config file There are 4 arguments in ssh-jail service:
+   argument default setting explanation     banner SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2 Set the banner of your shell.   credentials all Set the credentials accepted for your shell.   private-key random Set a ssh private-key.   motd see below Set the motd of your shell.</description>
+    </item>
+    
+    <item>
+      <title>SSH-Proxy</title>
+      <link>https://honeytrap.io/configuration/services/ssh-proxy/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ssh-proxy/</guid>
+      <description>Description The SSH-Proxy service will proxy ssh traffic through the remote server or lxc connector.
+Syntax [service.&amp;lt;nickname_of_sshproxy&amp;gt;] type=&amp;#34;ssh-proxy&amp;#34; Arguments in config file There are 2 arguments in ssh-proxy service:
+   argument default setting explanation     banner SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2 Set the banner of your shell.   private-key random Set a ssh private-key.    Example [service.sshproxy] type=&amp;#34;ssh-proxy&amp;#34; director=&amp;#34;lxc&amp;#34; [[port]] port=&amp;#34;tcp/8022&amp;#34; services=[&amp;#34;sshproxy&amp;#34;] [director.lxc] type=&amp;#34;lxc&amp;#34; host=&amp;#34;***.</description>
+    </item>
+    
+    <item>
+      <title>SSH-Simulator</title>
+      <link>https://honeytrap.io/configuration/services/ssh-simulator/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/ssh-simulator/</guid>
+      <description>Description The SSH-Simulator service will simulate a Secured SHell.
+Syntax [service.&amp;lt;nickname_of_ssh-simulator&amp;gt;] type=&amp;#34;ssh-simulator&amp;#34; Arguments in config file There are 5 arguments in ssh-simulator service:
+   argument default setting explanation     banner SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2 Set the banner of your shell.   credentials all Set the credentials accepted for your shell.   private-key random Set a ssh private-key.   max-auth-tries unlimited Set the maximum-number of authentication attempts allowed.</description>
+    </item>
+    
+    <item>
+      <title>Telnet</title>
+      <link>https://honeytrap.io/configuration/services/telnet/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/telnet/</guid>
+      <description>Description The Telnet service will simulate a Telnet server.
+Syntax [service.&amp;lt;nickname_of_telnetService&amp;gt;] type=&amp;#34;telnet&amp;#34; Arguments in config file There are 2 arguments in telnet service:
+   argument default setting explanation     prompt $ Set the prompt of your server   motd &amp;ldquo;see below&amp;rdquo; Set the motd of your server.    motd:
+******************************************************************************** * Copyright(C) 2008-2015 Huawei Technologies Co., Ltd. * * All rights reserved * * Without the owner&amp;#39;s prior written consent, * * no decompiling or reverse-engineering shall be allowed.</description>
+    </item>
+    
+    <item>
+      <title>VNC</title>
+      <link>https://honeytrap.io/configuration/services/vnc/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/vnc/</guid>
+      <description>Description The VNC service will simulate a VNC Environment.
+It will capture the authentication and connection informations.
+Syntax [service.&amp;lt;nickname_of_vncService&amp;gt;] type=&amp;#34;vnc&amp;#34; Arguments in config file There are 2 arguments in VNC service:
+   argument default setting explanation     image none Set the image of your desktop.   server-name none Set the name of your server.    Example [service.vnc] type=&amp;#34;vnc&amp;#34; image=&amp;#34;/data/images/desktop.png&amp;#34; server-name=&amp;#34;WS-3244&amp;#34; [[port]] port=&amp;#34;tcp/5900&amp;#34; services=[&amp;#34;vnc&amp;#34;] How to test With Safari on MacOS:</description>
+    </item>
+    
+    <item>
+      <title>TFTP</title>
+      <link>https://honeytrap.io/configuration/services/tftp/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/services/tftp/</guid>
+      <description>Description TFTP service will simulate a Trivial File Transfer Protocol server which returns an error &amp;ldquo;file not found&amp;rdquo;.
+Syntax [service.&amp;lt;nickname_of_tftp&amp;gt;] type=&amp;#34;tftp&amp;#34; Arguments in config file There are no arguments in TFTP service:
+Example [service.tftp] type=&amp;#34;tftp&amp;#34; [[port]] port=&amp;#34;udp/69&amp;#34; services=[&amp;#34;tftp&amp;#34;] How to test # Linux tftp -v localhost -c put myfile.txt # MacOS &amp;gt; tftp tftp&amp;gt; connect (to) localhost tftp&amp;gt; get (files) myfile.txt Error code 256: tftp&amp;gt; quit  Availability</description>
+    </item>
+    
+  </channel>
+</rss>

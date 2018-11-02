@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Listeners on HoneyTrap</title>
+    <link>https://honeytrap.io/categories/listeners/</link>
+    <description>Recent content in Listeners on HoneyTrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://honeytrap.io/categories/listeners/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agent</title>
+      <link>https://honeytrap.io/configuration/listeners/agent/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/agent/</guid>
+      <description>Description Theagent listener allows the usage of agents as &amp;ldquo;providers&amp;rdquo; of traffic.
+When starting HoneyTrap with an Agent listener, You will have displayed a random HoneyTrap Agent Server public Key, such as:
+ Honeytrap Agent Server public key: 12a9ce17adc2ad1553040b19c33575bbef9fe7adedc6d14a669251a8f7f7a256
+ You will have to enter this key in the configuration file of each of your agents.
+Syntax [listener] type=&amp;#34;agent&amp;#34;  How many? There needs to be one listener and there can only be one.</description>
+    </item>
+    
+    <item>
+      <title>Netstack</title>
+      <link>https://honeytrap.io/configuration/listeners/netstack/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/netstack/</guid>
+      <description>Description The netstack listener is a custom network stack implementation.
+Syntax [listener] type=&amp;#34;netstack&amp;#34;  How many? There needs to be one listener and there can only be one.
+Arguments in config file There are 3 arguments in netstack listener:
+   argument default setting explanation     addr none Set the address of &amp;lt;&amp;hellip;&amp;gt;   interfaces none Set the list of interfaces you want to listen on.</description>
+    </item>
+    
+    <item>
+      <title>Raw</title>
+      <link>https://honeytrap.io/configuration/listeners/raw/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/raw/</guid>
+      <description>Description The raw listener will listen on all ports of an interface.
+Syntax [listener] type=&amp;#34;raw&amp;#34;  How many? There needs to be one listener and there can only be one.
+You can select as many interfaces as you want.
+Arguments in config file There is 1 argument in Raw listener:
+   argument default setting explanation     interfaces none Set the list of interfaces you want to listen on.</description>
+    </item>
+    
+    <item>
+      <title>Tap</title>
+      <link>https://honeytrap.io/configuration/listeners/tap/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/tap/</guid>
+      <description> Description The tap listener will log all events from a tap interface.
+Syntax [listener] type=&amp;#34;tap&amp;#34;  How many? There needs to be one listener and there can only be one.
+Arguments in config file There are no arguments in tap listener.
+Example [listener] type=&amp;#34;tap&amp;#34; Availability 
+    Linux MacOS     tap yes no    </description>
+    </item>
+    
+    <item>
+      <title>Tun</title>
+      <link>https://honeytrap.io/configuration/listeners/tun/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/tun/</guid>
+      <description> Description The tun listener will log all events from a tun interface.
+Syntax [listener] type=&amp;#34;tun&amp;#34;  How many? There needs to be one listener and there can only be one.
+Arguments in config file There are no arguments in tun listener.
+Example [listener] type=&amp;#34;tun&amp;#34; Availability 
+    Linux MacOS     tun &amp;lt;&amp;hellip;&amp;gt; yes    </description>
+    </item>
+    
+    <item>
+      <title>Socket</title>
+      <link>https://honeytrap.io/configuration/listeners/socket/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/listeners/socket/</guid>
+      <description>Description The socket listener allows to choose on which ports you want to listen on as &amp;ldquo;providers&amp;rdquo; of traffic.
+When starting HoneyTrap with a Socket listener, for each port opened you will be displayed:
+09:54:45.990 listeners/socket ▶ INFO 00b Listener started: tcp/:8022  This means that HoneyTrap is now listening on tcp/8022.
+ Syntax [listener] type=&amp;#34;socket&amp;#34;  How many? There needs to be one listener and there can only be one.</description>
+    </item>
+    
+  </channel>
+</rss>

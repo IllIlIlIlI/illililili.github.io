@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on HoneyTrap</title>
+    <link>https://honeytrap.io/categories/getting-started/</link>
+    <description>Recent content in Getting Started on HoneyTrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://honeytrap.io/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://honeytrap.io/getting-started/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/getting-started/</guid>
+      <description>If this is your first time using HoneyTrap, we recommend the quick start.
+Next, you can check thedescription of the configuration used in the quick start, where every configurable field is explained.
+Afterwards, you can either have a look at the entire panel of features and possibilities offered by HoneyTrap at the Configuration section or go directly to setup to decide which mode you want to implement.</description>
+    </item>
+    
+    <item>
+      <title>HoneyTrap Configuration</title>
+      <link>https://honeytrap.io/configuration/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/</guid>
+      <description>In the following sections, you can find all the configurations available for your HoneyTrap.</description>
+    </item>
+    
+    <item>
+      <title>Directors</title>
+      <link>https://honeytrap.io/configuration/directors/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/directors/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

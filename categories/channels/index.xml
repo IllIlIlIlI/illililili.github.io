@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Channels on HoneyTrap</title>
+    <link>https://honeytrap.io/categories/channels/</link>
+    <description>Recent content in Channels on HoneyTrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://honeytrap.io/categories/channels/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Console</title>
+      <link>https://honeytrap.io/configuration/channels/console/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/console/</guid>
+      <description> Description The console channel will log all events to the console.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;console&amp;#34; Arguments in config file There are no arguments in Console channel.
+Example [channel.console01] type=&amp;#34;console&amp;#34; Availability    Linux MacOS     yes
+ yes
+    </description>
+    </item>
+    
+    <item>
+      <title>Dshield</title>
+      <link>https://honeytrap.io/configuration/channels/dshield/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/dshield/</guid>
+      <description>Description The Dshield channel will log all events to a Dshield API.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;dshield&amp;#34; Arguments in config file There are 5 arguments in Dshield channel:
+   argument default setting explanation     url none &amp;lt;..&amp;gt; .   user_id none Set your Dshield user_id.   api_key none Set your Dshield api_key.   insecure none true will disable certificate validation.   debug none Set true if you want to log dshield response ?</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://honeytrap.io/configuration/channels/elasticsearch/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/elasticsearch/</guid>
+      <description>Description The Elasticsearch channel will log all events to an Elasticsearch API.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;elasticsearch&amp;#34; url=&amp;#34;elasticsearch_server/index&amp;#34; Arguments in config file There are 3 arguments in Elasticsearch channel:
+   argument default setting explanation     url none Set the url and index of your Elasticsearch Server.   sniff none true defines that the client should find all nodes.   insecure none true will disable certificate validation.</description>
+    </item>
+    
+    <item>
+      <title>File</title>
+      <link>https://honeytrap.io/configuration/channels/file/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/file/</guid>
+      <description>Description The File channel will save all the events into a file.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;file&amp;#34; Arguments in config file There are 3 arguments in File channel:
+   argument default setting explanation     maxsize 1073741824 bytes (1gb) Set the maximal size of your log file.   filename none Set the name of the file.   timeout 5 sec Save in the file every timeout.</description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://honeytrap.io/configuration/channels/kafka/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/kafka/</guid>
+      <description> Description The kafka channel will put all the events on a kafka queue.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;kafka&amp;#34; Arguments in config file There are 2 arguments in Kafka channel:
+   argument default setting explanation     brokers none &amp;lt;&amp;hellip;&amp;gt;   topic none &amp;lt;&amp;hellip;&amp;gt;    Example [channel.kafka] type=&amp;#34;kafka&amp;#34; &amp;lt;...&amp;gt; Availability    Linux MacOS     yes
+ yes
+    </description>
+    </item>
+    
+    <item>
+      <title>Marija</title>
+      <link>https://honeytrap.io/configuration/channels/marija/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/marija/</guid>
+      <description>Description The Marija channel will log all events toMarija.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;marija&amp;#34; Arguments in config file There are 2 arguments in File channel:
+   argument default setting explanation     url none Set the url for Marija.   insecure none true will disable certificate validation.    Example [channel.marija] type=&amp;#34;marija&amp;#34; url=&amp;#34;http://127.0.0.1:9200/honeytrap&amp;#34; insecure=true Availability    Linux MacOS     yes</description>
+    </item>
+    
+    <item>
+      <title>Pulsar</title>
+      <link>https://honeytrap.io/configuration/channels/pulsar/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/pulsar/</guid>
+      <description>Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;pulsar&amp;#34; Description The Pulsar channel will send events to a Pulsar Producer.
+Arguments in config file There are 2 arguments in Pulsar channel:
+   argument default setting explanation     url none Set the url of your Pulsar Producer.   insecure none true will disable certificate validation.    Example [channel.pulsar] type=&amp;#34;pulsar&amp;#34; url=&amp;#34;pulsar://localhost:6650&amp;#34; Availability    Linux MacOS     yes</description>
+    </item>
+    
+    <item>
+      <title>Rabbitmq</title>
+      <link>https://honeytrap.io/configuration/channels/rabbitmq/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/rabbitmq/</guid>
+      <description>Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;rabbitmq&amp;#34; Description The rabbitmq channel will queue all the events to a RabbitMQ Server.
+Arguments in config file There are 2 arguments in Rabbitmq channel:
+   argument default setting explanation     address none Set your AMQP address.   queue none Set the AMQP queue.    Example [channel.rabbitmq] type=&amp;#34;rabbitmq&amp;#34; address=&amp;#34;amqp://guest:guest@localhost:5672/&amp;#34; queue=&amp;#34;honeytrap&amp;#34; Availability    Linux MacOS     yes</description>
+    </item>
+    
+    <item>
+      <title>Raven</title>
+      <link>https://honeytrap.io/configuration/channels/raven/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/raven/</guid>
+      <description>Description The Raven channel will log all events to a Raven Server.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;raven&amp;#34; Arguments in config file There are 3 arguments in Raven channel:
+   argument default setting explanation     token none Set the token identifying your HoneyTrap.   server none Set the url of your Raven Server.   insecure yes true will disable certificate validation.    Example [channel.</description>
+    </item>
+    
+    <item>
+      <title>Slack</title>
+      <link>https://honeytrap.io/configuration/channels/slack/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/slack/</guid>
+      <description>Description The slack channel will send all events to a Slack channel API.
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;slack&amp;#34; Arguments in config file There are 4 arguments in Slack channel:
+   argument default setting explanation     webhook_url none Set the webhook_url of your webhook.   username none Set your username.   icon_url none Set the icon_url to use in place of the default icon.   icon_emoji none Set the icon_emoji to use in place of the default icon.</description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>https://honeytrap.io/configuration/channels/splunk/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeytrap.io/configuration/channels/splunk/</guid>
+      <description>Description The Splunk channel will log all events to a HTTP Event Collector (HEC).
+Syntax [channel.&amp;lt;you_choose&amp;gt;] type=&amp;#34;splunk&amp;#34; Arguments in config file There are 3 arguments in Dshield channel:
+   argument default setting explanation     endpoints none Set your serverURLs.   token none Set your Splunk token.   verify none false will disable certificate validation.    Example [channel.splunk01] type=&amp;#34;splunk&amp;#34; endpoints=[&amp;#34;https://127.0.0.1:8088&amp;#34;] token=&amp;#34;{splunk_token}&amp;#34; verify=false Availability    Linux MacOS     yes</description>
+    </item>
+    
+  </channel>
+</rss>
